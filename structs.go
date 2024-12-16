@@ -19,7 +19,7 @@ type ServerInfo struct {
 // UserInfo is the current state of the user as it relates to the Xtream-Codes server.
 type UserInfo struct {
 	ActiveConnections    FlexInt            `json:"active_cons,string"`
-	AllowedOutputFormats []string           `json:"allowed_output_formats"`
+	AllowedOutputFormats Set[string]        `json:"allowed_output_formats"`
 	Auth                 ConvertibleBoolean `json:"auth"`
 	CreatedAt            Timestamp          `json:"created_at"`
 	ExpDate              *Timestamp         `json:"exp_date"`
