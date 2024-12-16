@@ -61,7 +61,7 @@ type Stream struct {
 	Name               string     `json:"name"`
 	Number             FlexInt    `json:"num"`
 	Rating             FlexFloat  `json:"rating"`
-	Rating5based       FlexFloat  `json:"rating_5based"`
+	Rating5       	   FlexFloat  `json:"rating_5based"`
 	TVArchive          FlexInt    `json:"tv_archive"`
 	TVArchiveDuration  *FlexInt   `json:"tv_archive_duration"`
 	Type               string     `json:"stream_type"`
@@ -80,7 +80,7 @@ type SeriesInfo struct {
 	Name           string           `json:"name"`
 	Num            FlexInt          `json:"num"`
 	Plot           string           `json:"plot"`
-	Rating         FlexInt          `json:"rating,string"`
+	Rating         FlexFloat          `json:"rating,string"`
 	Rating5        FlexFloat        `json:"rating_5based"`
 	ReleaseDate    string           `json:"releaseDate"`
 	SeriesID       FlexInt          `json:"series_id"`

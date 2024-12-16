@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: circleci/golang:1.10
 
-    working_directory: /go/src/github.com/tellytv/go.xtream-codes
+    working_directory: /go/src/github.com/xybydy/go.xtream-codes
     steps:
       - checkout
       - run: go get -u github.com/onsi/gomega
